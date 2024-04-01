@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smoothie Heaven</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Smoothie Machine</h1>
+        <form id="smoothie-form">
+            <div class="form-group">
+                <label for="flavor">Choose a Flavor:</label>
+                <select id="flavor" name="flavor">
+                    <option value="banana">Banana</option>
+                    <option value="strawberry">Strawberry</option>
+                    <option value="mango">Mango</option>
+                    <option value="blueberry">Blueberry</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="size">Select Size:</label>
+                <input type="radio" id="small" name="size" value="small">
+                <label for="small">Small</label>
+                <input type="radio" id="medium" name="size" value="medium">
+                <label for="medium">Medium</label>
+                <input type="radio" id="large" name="size" value="large">
+                <label for="large">Large</label>
+            </div>
+            <div class="form-group">
+                <label for="toppings">Choose Toppings:</label><br>
+                <input type="checkbox" id="coconut-flakes" name="toppings" value="coconut flakes">
+                <label for="coconut-flakes">Coconut Flakes</label><br>
+                <input type="checkbox" id="nuts" name="toppings" value="nuts">
+                <label for="nuts">Nuts</label><br>
+                <input type="checkbox" id="fruits" name="toppings" value="fruits">
+                <label for="fruits">Fruits</label><br>
+            </div>
+            <button type="submit" id="order-btn">Order Now</button>
+        </form>
+        <div id="smoothie-output"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
